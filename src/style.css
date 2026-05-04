@@ -37,6 +37,15 @@ body {
   padding: 48px 64px;
 }
 
+.message {
+  font-family: "Sono", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: 600;
+  margin-top: 24px;
+}
+
 .hidden {
   display: none !important;
 }
@@ -140,7 +149,7 @@ h1 {
   border: none;
   background-color: #78716c;
   font-size: 14px;
-  padding: 3px 12px 6px 12px;
+  padding: 8px 12px 5px;
   border-radius: 100px;
   color: inherit;
   font-family: inherit;
