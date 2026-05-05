@@ -34,7 +34,7 @@ body {
   background-color: #292524;
   color: #fafaf9;
   font-family: "Sono", sans-serif;
-  padding: 48px 64px;
+  padding: 48px 64px 0px;
 }
 
 .message {
@@ -48,6 +48,11 @@ body {
 
 .hidden {
   display: none !important;
+}
+
+.disputed {
+  color: #ef4444;
+  font-weight: 600;
 }
 
 /* MAIN LAYOUT */
@@ -69,9 +74,24 @@ body {
   gap: 48px;
 }
 
+@media (min-width: 901px) {
+  .main {
+    height: calc(100vh - 48px - 68px - 40px);
+  }
+  section {
+    overflow-y: auto;
+    height: 100%;
+  }
+}
+
 @media (max-width: 900px) {
   .main {
     grid-template-columns: 1fr;
+    height: auto;
+  }
+  section {
+    overflow-y: visible;
+    height: auto;
   }
 }
 
@@ -250,10 +270,6 @@ ul {
 }
 
 @media (max-width: 1000px) {
-  body {
-    padding: 32px 48px;
-  }
-
   .fact-form {
     flex-direction: column;
     align-items: stretch;
